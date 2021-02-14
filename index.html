@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | Gather</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1240 height=1080 style="width: 1240px; height: 1080px; background: #231F20"></canvas>
     <script src="Build/www.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/www.data.gz",
-        frameworkUrl: "Build/www.framework.js.gz",
-        codeUrl: "Build/www.wasm.gz",
+        dataUrl: "Build/www.data.unityweb",
+        frameworkUrl: "Build/www.framework.js.unityweb",
+        codeUrl: "Build/www.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Gather",
